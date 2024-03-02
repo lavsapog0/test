@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Basic HTML App</h1>
+
+    <label for="userInput">Enter Text:</label>
+    <input type="text" id="userInput" placeholder="Type something...">
+
+    <button onclick="displayText()">Show Text</button>
+
+    <p id="outputText"></p>
+
+    <script>
+        function displayText() {
+            // Get the value entered by the user
+            var userInput = document.getElementById('userInput').value;
+
+            // Display the text in the paragraph
+            document.getElementById('outputText').textContent = "You entered: " + userInput;
+        }
+    </script>
+
+</body>
+</html>
